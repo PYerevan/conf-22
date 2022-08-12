@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PS2P";
+  src: url("/fonts/PS2P/PressStart2P-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/fonts/Silkscreen/Silkscreen-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/fonts/Silkscreen/Silkscreen-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/fonts/Silkscreen/Silkscreen-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SourceCode';
+  src: url("/fonts/SourceCode/SourceCodePro-Regular.ttf");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'SourceCode';
+  src: url("/fonts/SourceCode/SourceCodePro-SemiBold.ttf");
+  font-weight: semi-bold;
+}
+
+@font-face {
+  font-family: 'SourceCode';
+  src: url("/fonts/SourceCode/SourceCodePro-BoldBold.ttf");
+  font-weight: bold;
+}
+
+
+body {
+  @apply font-body;
+}

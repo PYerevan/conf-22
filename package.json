@@ -6,13 +6,28 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,vue .",
+    "deploy": "npm run build && echo 2022.pycon.am > ./dist/CNAME  && gh-pages -d dist --repo git@github.com:PYerevan/conf-22.git --branch gh-pages",
+    "deployHttps": "npm run build && echo 2022.pycon.am > ./dist/CNAME  && gh-pages -d dist --repo https://github.com/PYerevan/conf-22.git --branch gh-pages",
+    "deployMain": "npm run build && echo pycon.am > ./dist/CNAME && gh-pages -d dist --repo git@github.com:PYerevan/pycon.am.git --branch gh-pages",
+    "deployMainHttps": "npm run build && echo pycon.am > ./dist/CNAME && gh-pages -d dist --repo https://github.com/PYerevan/pycon.am.git --branch gh-pages"
   },
   "dependencies": {
     "vue": "^3.2.37"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.21.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-tailwindcss": "^3.6.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8",
     "vite": "^3.0.0"
   }
 }
