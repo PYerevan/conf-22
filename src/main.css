@@ -75,5 +75,5 @@
 
 
 body {
-  @apply font-body;
+  @apply font-body bg-[#252d3a] text-white;
 }
