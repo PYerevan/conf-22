@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       body: ['"Poppins"'],
-      heading: ['PS2P'],
+      // heading: ['PS2P'],
     },
     extend: {},
   },

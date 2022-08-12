@@ -2,7 +2,7 @@
   <div id="Speakers" class="min-h-screen bg-[#f9ad1b] pt-8 pb-20">
     <div class="container mx-auto">
       <div class="mb-16 text-center">
-        <h3 class="font-heading text-3xl text-[#912396]">Speakers</h3>
+        <h3 class="font-heading text-5xl font-bold text-[#912396]">Speakers</h3>
       </div>
 
       <div class="grid grid-cols-3 gap-x-4 gap-y-20">

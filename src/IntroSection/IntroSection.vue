@@ -7,10 +7,10 @@
     <div
       class="IntroContainer container relative mx-auto flex flex-col items-center justify-center"
     >
-      <h1 class="font-heading mb-4 text-xl md:text-3xl lg:text-5xl">
-        PyCon Armenia
-      </h1>
-      <p>November 5-6, AUA</p>
+      <div class="IntroContent">
+        <img src="./IntroLogo.svg" alt="PyCon Armenia" class="IntroLogo" />
+        <!-- <p>November 5-6, AUA, Yerevan</p> -->
+      </div>
     </div>
   </section>
 </template>
@@ -26,5 +26,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
+  }
+
+  .IntroContent {
+    padding: 10vmax;
+    background: #252e3a;
+    box-shadow: 0px 0px 60px rgba(32, 166, 193, 0.25);
+    border-radius: 30px;
+  }
+
+  .IntroLogo {
+    width: 30vmax;
   }
 </style>
