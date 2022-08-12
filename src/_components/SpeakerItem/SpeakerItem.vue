@@ -13,10 +13,10 @@
           backgroundColor: speakerInfoBackgroundColor,
         }"
       >
-        <h3 class="text-lg font-semibold">Davit Tigranyan</h3>
+        <h3 class="text-lg font-semibold">{{ name }}</h3>
         <p class="text-sm">
-          Senior Product Designer <br />
-          @Circa
+          {{ position }} <br />
+          @{{ positionAt }}
         </p>
       </div>
     </div>
@@ -33,6 +33,18 @@
     variation: {
       type: Number,
       default: () => 1,
+    },
+    name: {
+      type: String,
+      default: () => '',
+    },
+    position: {
+      type: String,
+      default: () => '',
+    },
+    positionAt: {
+      type: String,
+      default: () => '',
     },
   })
 

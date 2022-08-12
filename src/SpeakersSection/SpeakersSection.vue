@@ -26,6 +26,9 @@
 
     return {
       id: index,
+      name: 'Davit Tigranyan',
+      position: 'Senior Product Designer',
+      positionAt: 'Circa',
       variation: (rowNum + index) % 3,
     }
   })
