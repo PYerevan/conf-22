@@ -3,7 +3,7 @@
     id="Intro"
     class="relative flex min-h-screen flex-col items-center justify-center border-b-[30px] border-solid border-[#f9ad1b] bg-[#252d3a] py-20 px-10 text-white"
   >
-    <div class="IntroBg"></div>
+    <div class="IntroBg inset-[2%] md:inset-[10%]"></div>
     <div
       class="IntroContainer container relative mx-auto flex flex-col items-center justify-center"
     >
@@ -20,7 +20,6 @@
 <style lang="scss" scoped>
   .IntroBg {
     position: absolute;
-    inset: 10%;
     background-image: url('./IntroSectionBackground.svg');
     background-position: center;
     background-size: contain;
