@@ -1,7 +1,10 @@
 <template>
   <div class="relative">
-    <div class="SpeakerCardBg h-60 w-56"></div>
-    <div class="SpeakerCard h-60 w-56"></div>
+    <div class="SpeakerCard h-72 w-56">
+      <div class="SpeakerImg w-full bg-cover pb-[100%]"></div>
+      <div class="SpeakerInfo px-4 py-2"></div>
+    </div>
+    <div class="SpeakerCardBg h-72 w-56"></div>
   </div>
 </template>
 
@@ -13,6 +16,21 @@
     border: 7px solid #252e3a;
     position: relative;
     z-index: 1;
+  }
+
+  .SpeakerImg {
+    @apply bg-slate-100;
+  }
+
+  .SpeakerInfo {
+    position: absolute;
+    border-top: 7px solid #252e3a;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #d50e50;
+    z-index: 0;
+    min-height: 80px;
   }
 
   .SpeakerCardBg {
