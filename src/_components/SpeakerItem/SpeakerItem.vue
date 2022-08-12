@@ -7,14 +7,44 @@
           backgroundImage: `url('https://i.pravatar.cc/300?u=${rand}')`,
         }"
       ></div>
-      <div class="SpeakerInfo px-4 py-2"></div>
+      <div
+        class="SpeakerInfo px-4 py-2"
+        :style="{
+          backgroundColor: speakerInfoBackgroundColor,
+        }"
+      >
+        <h3 class="text-lg font-semibold">Davit Tigranyan</h3>
+        <p class="text-sm">
+          Senior Product Designer <br />
+          @Circa
+        </p>
+      </div>
     </div>
     <div class="SpeakerCardBg h-72 w-56"></div>
   </div>
 </template>
 
 <script setup>
+  import { computed } from 'vue'
+
   const rand = Math.random()
+
+  const props = defineProps({
+    variation: {
+      type: Number,
+      default: () => 1,
+    },
+  })
+
+  const speakerInfoBackgroundColorVariations = {
+    0: '#d50e50',
+    1: '#20A6C1',
+    2: '#93268F',
+  }
+
+  const speakerInfoBackgroundColor = computed(
+    () => speakerInfoBackgroundColorVariations[props.variation],
+  )
 </script>
 
 <style lang="scss" scoped>

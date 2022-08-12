@@ -11,7 +11,7 @@
           :key="speaker.id"
           class="flex flex-row justify-center"
         >
-          <SpeakerItem />
+          <SpeakerItem :variation="speaker.variation" />
         </div>
       </div>
     </div>
@@ -21,9 +21,14 @@
 <script setup>
   import SpeakerItem from '../_components/SpeakerItem/SpeakerItem.vue'
 
-  const speakers = new Array(12).fill(null).map((item, index) => ({
-    id: index,
-  }))
+  const speakers = new Array(12).fill(null).map((item, index) => {
+    const rowNum = Math.floor(index / 3)
+
+    return {
+      id: index,
+      variation: (rowNum + index) % 3,
+    }
+  })
 </script>
 
 <style lang="scss" scoped></style>
