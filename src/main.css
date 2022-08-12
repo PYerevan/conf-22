@@ -9,6 +9,31 @@
 }
 
 @font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: semi-bold;
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: medium;
+}
+
+@font-face {
   font-family: "Silkscreen";
   src: url("/fonts/Silkscreen/Silkscreen-Regular.ttf");
   font-weight: 400;
@@ -42,6 +67,10 @@
   font-family: 'SourceCode';
   src: url("/fonts/SourceCode/SourceCodePro-BoldBold.ttf");
   font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 

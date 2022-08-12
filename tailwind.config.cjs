@@ -1,13 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      'body': ['"SourceCode"'],
-      'heading': ['PS2P'],
+      body: ['"Poppins"'],
+      heading: ['PS2P'],
     },
     extend: {},
   },
