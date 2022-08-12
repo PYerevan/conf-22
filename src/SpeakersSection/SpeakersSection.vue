@@ -5,7 +5,7 @@
         <h3 class="font-heading text-5xl font-bold text-[#912396]">Speakers</h3>
       </div>
 
-      <div class="grid grid-cols-3 gap-x-4 gap-y-20">
+      <div class="grid gap-x-4 gap-y-20 md:grid-cols-3">
         <div
           v-for="speaker in speakers"
           :key="speaker.id"
