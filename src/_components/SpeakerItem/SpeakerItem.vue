@@ -1,14 +1,21 @@
 <template>
   <div class="relative">
     <div class="SpeakerCard h-72 w-56">
-      <div class="SpeakerImg w-full bg-cover pb-[100%]"></div>
+      <div
+        class="SpeakerImg w-full bg-cover pb-[100%]"
+        :style="{
+          backgroundImage: `url('https://i.pravatar.cc/300?u=${rand}')`,
+        }"
+      ></div>
       <div class="SpeakerInfo px-4 py-2"></div>
     </div>
     <div class="SpeakerCardBg h-72 w-56"></div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  const rand = Math.random()
+</script>
 
 <style lang="scss" scoped>
   .SpeakerCard {
