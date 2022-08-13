@@ -4,7 +4,7 @@
       <div
         class="SpeakerImg w-full bg-cover pb-[100%]"
         :style="{
-          backgroundImage: `url('https://i.pravatar.cc/300?u=${rand}')`,
+          backgroundImage: `url(${speaker.imgUrl})`,
         }"
       ></div>
       <div
@@ -13,10 +13,10 @@
           backgroundColor: speakerInfoBackgroundColor,
         }"
       >
-        <h3 class="text-lg font-semibold">{{ name }}</h3>
+        <h3 class="text-lg font-semibold">{{ speaker.name }}</h3>
         <p class="text-sm">
-          {{ position }} <br />
-          @{{ positionAt }}
+          {{ speaker.position }} <br />
+          @{{ speaker.positionAt }}
         </p>
       </div>
     </div>
@@ -34,18 +34,26 @@
       type: Number,
       default: () => 1,
     },
-    name: {
-      type: String,
-      default: () => '',
+    speaker: {
+      type: Object,
+      default: () => {},
     },
-    position: {
-      type: String,
-      default: () => '',
-    },
-    positionAt: {
-      type: String,
-      default: () => '',
-    },
+    // name: {
+    //   type: String,
+    //   default: () => '',
+    // },
+    // imgUrl: {
+    //   type: String,
+    //   default: () => '',
+    // },
+    // position: {
+    //   type: String,
+    //   default: () => '',
+    // },
+    // positionAt: {
+    //   type: String,
+    //   default: () => '',
+    // },
   })
 
   const speakerInfoBackgroundColorVariations = {
