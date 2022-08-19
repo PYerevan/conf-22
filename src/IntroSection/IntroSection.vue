@@ -1,7 +1,7 @@
 <template>
   <section
     id="Intro"
-    class="relative flex min-h-screen flex-col items-center justify-center border-b-[30px] border-solid border-[#f9ad1b] bg-[#252d3a] py-20 px-10 text-white"
+    class="bg-gray relative z-10 flex min-h-screen flex-col items-center justify-center border-b-[30px] border-solid border-[#f9ad1b] py-20 px-10 text-white"
   >
     <div class="IntroBg inset-[2%] md:inset-[10%]"></div>
     <div
