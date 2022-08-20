@@ -2,6 +2,7 @@
   <div class="AppWrapper relative overflow-hidden">
     <IntroSection />
     <SpeakersSection />
+    <LocationSection />
     <FooterSection />
     <div
       class="container absolute inset-0 z-0 mx-auto bg-contain bg-repeat-y"
@@ -12,6 +13,7 @@
 <script setup>
   import IntroSection from './IntroSection/IntroSection.vue'
   import SpeakersSection from './SpeakersSection/SpeakersSection.vue'
+  import LocationSection from './LocationSection/LocationSection.vue'
   import FooterSection from './FooterSection/FooterSection.vue'
 </script>
 

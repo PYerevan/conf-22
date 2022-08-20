@@ -1,10 +1,8 @@
 <template>
-  <div id="Speakers" class="min-h-screen bg-[#f9ad1b] pt-8 pb-20">
-    <div class="container mx-auto">
+  <div id="Speakers" class="min-h-screen bg-[#f9ad1b]">
+    <div class="pb-30 container relative z-10 mx-auto pt-20">
       <div class="mb-16 text-center">
-        <h3 class="font-heading text-5xl font-extrabold text-[#912396]">
-          Speakers
-        </h3>
+        <h3 class="text-5xl font-extrabold text-[#912396]">Speakers</h3>
       </div>
 
       <div class="grid gap-x-4 gap-y-20 md:grid-cols-3">

@@ -36,6 +36,9 @@ module.exports = {
           DEFAULT: '#252E3A',
         },
       },
+      spacing: {
+        30: '7.5rem',
+      },
     },
   },
   plugins: [],
