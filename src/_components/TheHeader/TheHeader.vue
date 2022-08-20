@@ -11,7 +11,7 @@
           isOpen ? 'max-h-[calc(100vh_-_64px)]' : 'max-h-0',
           'lg:max-h-max',
         ]"
-        class="absolute inset-x-0 top-full flex w-full flex-col items-center space-y-2 overflow-y-auto overflow-x-hidden transition-all lg:static lg:flex lg:h-max lg:w-auto lg:flex-row lg:space-x-2 lg:space-y-0"
+        class="absolute inset-x-0 top-full flex w-full flex-col items-center space-y-2 overflow-y-auto overflow-x-hidden transition-all lg:relative lg:flex lg:h-max lg:w-auto lg:flex-row lg:space-x-2 lg:space-y-0"
       >
         <a href="#About" class="NavItem" @click="handleMenuClose"> About </a>
         <a href="#Schedule" class="NavItem" @click="handleMenuClose">
@@ -38,6 +38,9 @@
             <div class="bg-red py-2 px-4">Request an invite</div>
           </BaseBlock>
         </a>
+        <div class="absolute bottom-0 left-0 h-3 w-full">
+          <TheSnakie />
+        </div>
       </nav>
       <button
         href="#"
@@ -84,6 +87,7 @@
   import { computed, ref } from 'vue'
   import { useWindowScroll } from '@vueuse/core'
   import BaseBlock from '../BaseBlock/BaseBlock.vue'
+  import TheSnakie from '../TheSnakie/TheSnakie.vue'
 
   const { y } = useWindowScroll()
 
