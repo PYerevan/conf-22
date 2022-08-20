@@ -39,7 +39,11 @@
           </BaseBlock>
         </a>
       </nav>
-      <button href="#" class="inline-block lg:hidden" @click="handleMenuToggle">
+      <button
+        href="#"
+        class="inline-block p-2 lg:hidden"
+        @click="handleMenuToggle"
+      >
         <svg
           v-if="!isOpen"
           xmlns="http://www.w3.org/2000/svg"
