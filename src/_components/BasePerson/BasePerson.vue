@@ -1,40 +1,38 @@
 <template>
   <div class="relative">
-    <div class="SpeakerCard h-72 w-56">
+    <div class="PersonCard h-72 w-56">
       <div
-        class="SpeakerImg w-full bg-cover pb-[100%]"
+        class="PersonImg w-full bg-cover pb-[100%]"
         :style="{
-          backgroundImage: `url(${speaker.imgUrl})`,
+          backgroundImage: `url(${person.imgUrl})`,
         }"
       ></div>
       <div
-        class="SpeakerInfo px-4 py-2"
+        class="PersonInfo px-4 py-2"
         :style="{
-          backgroundColor: speakerInfoBackgroundColor,
+          backgroundColor: personInfoBackgroundColor,
         }"
       >
-        <h3 class="text-lg font-semibold">{{ speaker.name }}</h3>
+        <h3 class="text-lg font-semibold">{{ person.name }}</h3>
         <p class="text-sm">
-          {{ speaker.position }} <br />
-          @{{ speaker.positionAt }}
+          {{ person.position }} <br />
+          @{{ person.positionAt }}
         </p>
       </div>
     </div>
-    <div class="SpeakerCardBg h-72 w-56"></div>
+    <div class="PersonCardBg h-72 w-56"></div>
   </div>
 </template>
 
 <script setup>
   import { computed } from 'vue'
 
-  const rand = Math.random()
-
   const props = defineProps({
     variation: {
       type: Number,
       default: () => 1,
     },
-    speaker: {
+    person: {
       type: Object,
       default: () => {},
     },
@@ -56,30 +54,30 @@
     // },
   })
 
-  const speakerInfoBackgroundColorVariations = {
+  const personInfoBackgroundColorVariations = {
     0: '#d50e50',
     1: '#20A6C1',
     2: '#93268F',
   }
 
-  const speakerInfoBackgroundColor = computed(
-    () => speakerInfoBackgroundColorVariations[props.variation],
+  const personInfoBackgroundColor = computed(
+    () => personInfoBackgroundColorVariations[props.variation],
   )
 </script>
 
 <style lang="scss" scoped>
-  .SpeakerCard {
+  .PersonCard {
     background-color: #fff;
     border: 7px solid #252e3a;
     position: relative;
     z-index: 1;
   }
 
-  .SpeakerImg {
+  .PersonImg {
     @apply bg-slate-100;
   }
 
-  .SpeakerInfo {
+  .PersonInfo {
     position: absolute;
     border-top: 7px solid #252e3a;
     width: 100%;
@@ -90,7 +88,7 @@
     min-height: 80px;
   }
 
-  .SpeakerCardBg {
+  .PersonCardBg {
     border: 7px solid #252e3a;
     background: #fff;
     position: absolute;

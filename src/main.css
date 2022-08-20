@@ -79,6 +79,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 
 body {
   @apply font-body bg-[#252d3a] text-white;

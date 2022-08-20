@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray relative z-10 py-9"></div>
+  <div class="bg-gray relative z-10 py-28"></div>
 </template>
 
 <script setup></script>

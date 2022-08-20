@@ -14,6 +14,7 @@
     "deployMainHttps": "npm run build && echo pycon.am > ./dist/CNAME && gh-pages -d dist --repo https://github.com/PYerevan/pycon.am.git --branch gh-pages"
   },
   "dependencies": {
+    "@vueuse/core": "^9.1.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {

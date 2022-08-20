@@ -11,7 +11,7 @@
           :key="speaker.id"
           class="flex flex-row justify-center"
         >
-          <SpeakerItem :speaker="speaker" :variation="speaker.variation" />
+          <BasePerson :person="speaker" :variation="speaker.variation" />
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-  import SpeakerItem from '../_components/SpeakerItem/SpeakerItem.vue'
+  import BasePerson from '../_components/BasePerson/BasePerson.vue'
 
   const speakersLorem = new Array(9).fill(null).map((item, index) => {
     return {
@@ -63,8 +63,6 @@
         ...item,
       }
     })
-
-  console.log('speakers', speakers)
 </script>
 
 <style lang="scss" scoped></style>

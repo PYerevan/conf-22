@@ -1,5 +1,5 @@
 <template>
-  <div id="Speakers" class="bg-red min-h-screen">
+  <div id="Team" class="bg-red min-h-screen">
     <div class="pb-30 container relative z-10 mx-auto pt-20">
       <div class="mb-16 text-center">
         <h3 class="text-5xl font-extrabold text-white">Team</h3>
@@ -11,7 +11,7 @@
           :key="speaker.id"
           class="flex flex-row justify-center"
         >
-          <SpeakerItem :speaker="speaker" :variation="speaker.variation" />
+          <BasePerson :person="speaker" :variation="speaker.variation" />
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-  import SpeakerItem from '../_components/SpeakerItem/SpeakerItem.vue'
+  import BasePerson from '../_components/BasePerson/BasePerson.vue'
 
   const speakersLorem = new Array(3).fill(null).map((item, index) => {
     return {

@@ -2,7 +2,7 @@
   <div class="BaseBlock relative flex">
     <div
       class="BaseBlockFront relative z-10 flex flex-1"
-      :class="blockBgClassname"
+      :class="bgColorClassname"
     >
       <slot>Hello World</slot>
     </div>
@@ -22,13 +22,19 @@
       type: String,
       default: () => '',
     },
+    thickness: {
+      type: Number,
+      default: () => 7,
+    },
   })
+
+  const borderWidth = `${props.thickness}px`
 </script>
 
 <style lang="scss" scoped>
   .BaseBlockFront,
   .BaseBlockBg {
-    border: 7px solid #252e3a;
+    border: v-bind(borderWidth) solid #252e3a;
   }
 
   .BaseBlockBg {

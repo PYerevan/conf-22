@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-green pb-30 pt-20">
+  <div id="Jobs" class="bg-green pb-30 pt-20">
     <div class="container relative z-10 mx-auto px-8 md:p-0">
       <div class="mb-16 text-center">
         <h3 class="text-5xl font-extrabold text-white">Jobs</h3>
@@ -14,7 +14,7 @@
             :class="job.className"
           >
             <div class="min-h-[106px] px-4 py-2">
-              <h5 class="text-xl">{{ job.title }}</h5>
+              <h5 class="text-2xl">{{ job.title }}</h5>
               <h6 class="opacity-70">{{ job.company }}</h6>
             </div>
           </a>
