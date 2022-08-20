@@ -8,7 +8,7 @@
     <FooterSection />
     <div
       id="AppParallaxBackground"
-      class="container absolute inset-y-[-1000px] z-0 mx-auto bg-contain bg-repeat-y"
+      class="container absolute inset-y-[-1000px] inset-x-0 z-0 mx-auto bg-contain bg-repeat-y"
       :style="{
         transition: '.05s linear',
         transform: `translateY(${bgOffset}px)`,
