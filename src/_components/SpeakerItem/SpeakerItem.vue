@@ -96,7 +96,7 @@
     position: absolute;
     left: 20px;
     top: 20px;
-    background-image: url('./stripes.svg');
+    background-image: url('/stripes.svg');
     z-index: 0;
   }
 </style>
