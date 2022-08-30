@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="PersonCard h-72 w-56">
+    <div class="PersonCard h-64 w-44">
       <div
         class="PersonImg w-full bg-cover pb-[100%]"
         :style="{
@@ -13,14 +13,14 @@
           backgroundColor: personInfoBackgroundColor,
         }"
       >
-        <h3 class="text-lg font-semibold">{{ person.name }}</h3>
-        <p class="text-sm">
+        <h3 class="text font-semibold">{{ person.name }}</h3>
+        <p class="text-xs">
           {{ person.position }} <br />
           @{{ person.positionAt }}
         </p>
       </div>
     </div>
-    <div class="PersonCardBg h-72 w-56"></div>
+    <div class="PersonCardBg h-64 w-44"></div>
   </div>
 </template>
 

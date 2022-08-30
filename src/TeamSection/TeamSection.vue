@@ -1,11 +1,13 @@
 <template>
-  <div id="Team" class="bg-red min-h-screen">
+  <div id="Team" class="bg-red">
     <div class="pb-30 container relative z-10 mx-auto pt-20">
       <div class="mb-16 text-center">
         <h3 class="text-5xl font-extrabold text-white">Team</h3>
       </div>
 
-      <div class="grid gap-x-4 gap-y-20 md:grid-cols-4">
+      <div
+        class="grid items-center justify-center gap-x-4 gap-y-20 md:grid-cols-5"
+      >
         <div
           v-for="member in members"
           :key="member.id"
@@ -54,6 +56,12 @@
       imgUrl: '/team/grigory.jpeg',
       position: 'Head of Technical Marketing',
       positionAt: 'Evrone',
+    },
+    {
+      name: 'Lili Shahnazaryan',
+      imgUrl: '/team/lili.jpg',
+      position: 'Event Manager',
+      positionAt: 'PyCon Armenia',
     },
   ].map((item, index) => {
     const rowNum = Math.floor(index / 4)
