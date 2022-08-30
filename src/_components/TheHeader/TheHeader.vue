@@ -14,28 +14,29 @@
         class="absolute inset-x-0 top-full flex w-full flex-col items-center space-y-2 overflow-y-auto overflow-x-hidden transition-all lg:static lg:flex lg:h-max lg:w-auto lg:flex-row lg:space-x-2 lg:space-y-0"
       >
         <a href="#About" class="NavItem" @click="handleMenuClose"> About </a>
-        <a href="#Schedule" class="NavItem" @click="handleMenuClose">
+        <!-- <a href="#Schedule" class="NavItem" @click="handleMenuClose">
           Schedule
-        </a>
-        <a href="#Speakers" class="NavItem" @click="handleMenuClose">
+        </a> -->
+        <!-- <a href="#Speakers" class="NavItem" @click="handleMenuClose">
           Speakers
-        </a>
-        <a href="#Sponsors" class="NavItem" @click="handleMenuClose">
+        </a> -->
+        <!-- <a href="#Sponsors" class="NavItem" @click="handleMenuClose">
           Sponsors
-        </a>
+        </a> -->
         <a href="#Team" class="NavItem" @click="handleMenuClose"> Team </a>
         <a href="#Location" class="NavItem" @click="handleMenuClose">
           Location
         </a>
-        <a href="#Jobs" class="NavItem" @click="handleMenuClose"> Jobs </a>
+        <!-- <a href="#Jobs" class="NavItem" @click="handleMenuClose"> Jobs </a> -->
         <a href="#FAQ" class="NavItem" @click="handleMenuClose"> FAQ </a>
         <a
-          href="#"
+          href="https://forms.gle/Q1aKaLR2GGSn4uxcA"
+          target="_blank"
           class="NavItem NavItemAction !mb-8 lg:!mb-0"
           @click="handleMenuClose"
         >
           <BaseBlock :thickness="4" class="-top-1">
-            <div class="bg-red py-2 px-4">Request an invite</div>
+            <div class="bg-red py-2 px-4">Become a speaker</div>
           </BaseBlock>
         </a>
       </nav>

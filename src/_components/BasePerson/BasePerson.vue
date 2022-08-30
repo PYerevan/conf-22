@@ -58,6 +58,7 @@
     0: '#d50e50',
     1: '#20A6C1',
     2: '#93268F',
+    3: '#FBAD18',
   }
 
   const personInfoBackgroundColor = computed(

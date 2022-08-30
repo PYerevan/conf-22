@@ -2,10 +2,10 @@
   <div class="AppWrapper relative">
     <TheHeader />
     <IntroSection />
-    <SpeakersSection />
+    <!-- <SpeakersSection /> -->
     <TeamSection />
     <LocationSection />
-    <JobsSection />
+    <!-- <JobsSection /> -->
     <FooterSection />
     <div class="absolute inset-0 overflow-hidden">
       <div
